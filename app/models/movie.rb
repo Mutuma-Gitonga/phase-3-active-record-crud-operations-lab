@@ -41,10 +41,10 @@ class Movie < ActiveRecord::Base
 
   # DELETE METHODS
   def self.delete_by_id(id)
-    self.delete(id)
+    self.destroy(id)
   end
 
   def self.delete_all_movies
-    self.delete_all
+    self.destroy_all
   end
 end
